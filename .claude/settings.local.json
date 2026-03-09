@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -n \"#1A3A2A\\\\|#2A5A40\\\\|#0F2218\\\\|#C9A84C\\\\|#DFC06A\\\\|#A8892E\\\\|#FBF7F0\\\\|#F2EBE0\" *.tsx)",
+      "Bash(sed -i 's/bg-\\\\[#E07882\\\\] text-\\\\[#5C3D8F\\\\]/bg-[#E07882] text-white/g' MobileBar.tsx)",
+      "Bash(sed -i 's/btn-gold px-8 py-4 rounded-full text-\\\\[#5C3D8F\\\\]/btn-gold px-8 py-4 rounded-full text-white/g' VideoSection.tsx)",
+      "Bash(npm install lucide-react clsx tailwind-merge --save)"
+    ]
+  }
+}
