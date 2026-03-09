@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Thank You | Creator Aesthetic Clinic",
-  description: "Thank you for booking your free hair restoration consultation with Dr. Sai at Creator Aesthetic Clinic.",
+  description: "Thank you for booking your hair restoration consultation with Dr. Sai at Creator Aesthetic Clinic.",
 };
 
 export default function ThankYouPage() {
@@ -47,7 +47,7 @@ export default function ThankYouPage() {
           <p className="text-charcoal-mid text-sm leading-relaxed text-center mb-7">
             Dr. Sai&apos;s team will call you within{" "}
             <span className="font-semibold text-forest">24 hours</span> to
-            schedule your free consultation. We look forward to helping you.
+            schedule your consultation. We look forward to helping you.
           </p>
 
           {/* What happens next */}
@@ -58,7 +58,7 @@ export default function ThankYouPage() {
             {[
               { step: "1", text: "Our team reviews your hair loss stage" },
               { step: "2", text: "We call you within 24 hours to confirm your slot" },
-              { step: "3", text: "Free consultation with Dr. Sai at the clinic" },
+              { step: "3", text: "consultation with Dr. Sai at the clinic" },
             ].map(({ step, text }) => (
               <div key={step} className="flex items-start gap-3">
                 <span className="w-6 h-6 rounded-full bg-forest flex items-center justify-center text-white text-xs font-bold shrink-0 mt-0.5">

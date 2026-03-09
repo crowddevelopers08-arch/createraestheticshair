@@ -45,7 +45,7 @@ export default function DoctorSection() {
   return (
     <section id="doctor" className="bg-[#FFFFFF] py-12 md:py-12 lg:py-12 max-[470px]:py-6">
       <div className="section-container">
-        <div className="grid lg:grid-cols-[340px_1fr] gap-10 lg:gap-20 items-start">
+        <div className="grid lg:grid-cols-[340px_1fr] gap-10 lg:gap-20 max-[470px]:gap-4 items-start">
           {/* Doctor photo + credentials */}
           <FadeIn direction="left">
             <div className="flex flex-col items-center lg:items-start gap-6">
@@ -73,7 +73,7 @@ export default function DoctorSection() {
               </div>
 
               {/* Credentials card */}
-              <div className="bg-[#5C3D8F] rounded-2xl p-4 sm:p-5 w-full max-w-xs text-white">
+              {/* <div className="bg-[#5C3D8F] rounded-2xl p-4 sm:p-5 w-full max-w-xs text-white">
                 <h4 className="font-display font-semibold text-[#D4607A] mb-3 text-sm uppercase tracking-wider">
                   Credentials
                 </h4>
@@ -92,7 +92,7 @@ export default function DoctorSection() {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </div> */}
             </div>
           </FadeIn>
 

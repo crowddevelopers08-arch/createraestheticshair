@@ -18,7 +18,7 @@ const sections = [
   {
     title: "How We Use Your Information",
     content: [
-      "To contact you and schedule your free hair restoration consultation with Dr. Sai.",
+      "To contact you and schedule your hair restoration consultation with Dr. Sai.",
       "To understand your concern better and recommend the most suitable treatment (GFC, PRP, or Exosome therapy).",
       "We do not sell, rent, or share your personal information with third parties for marketing purposes.",
     ],

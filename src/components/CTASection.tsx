@@ -41,7 +41,7 @@ export default function CTASection() {
                 href="#hero"
                 className="btn-gold inline-flex items-center justify-center gap-2 w-full sm:w-auto px-7 py-3.5 rounded-full text-white font-semibold text-sm shadow-[0_10px_28px_rgba(212,96,122,0.35)]"
               >
-                Book Free Consultation
+                Book Your Consultation
                 <svg
                   width="16"
                   height="16"

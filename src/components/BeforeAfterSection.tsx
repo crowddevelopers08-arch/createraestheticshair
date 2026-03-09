@@ -79,7 +79,7 @@ export default function BeforeAfterSection() {
               href="#hero"
               className="btn-gold flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 rounded-full text-white font-semibold text-sm tracking-wide"
             >
-              Book Free Consultation
+              Book Your Consultation
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
             <a

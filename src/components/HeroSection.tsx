@@ -76,7 +76,7 @@ export default function HeroSection() {
                 href="#hero"
                 className="btn-gold px-6 py-3 rounded-full text-white font-semibold text-sm"
               >
-                Book Free Consultation
+                Book Your Consultation
               </a>
               <a
                 href="https://wa.me/916385083099?text=Hi%2C%20I%27m%20interested%20in%20a%20hair%20restoration%20consultation"

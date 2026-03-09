@@ -54,7 +54,7 @@ export default function LeadForm({ variant = "hero", treatmentName }: LeadFormPr
       {variant === "hero" && (
         <div className="mb-5">
           <p className="text-white font-display text-lg font-semibold">
-            Book Your Free Consultation
+            Book Your Consultation
           </p>
           <p className="text-white/70 text-xs mt-1">
             Whatever your concern, we have a solution!
@@ -241,7 +241,7 @@ export default function LeadForm({ variant = "hero", treatmentName }: LeadFormPr
       >
         {loading ? "Submitting..." : (
           <>
-            Book Free Consultation
+            Book Your Consultation
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </>
         )}

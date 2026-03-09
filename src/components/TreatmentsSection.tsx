@@ -9,7 +9,7 @@ const treatments = [
     id: "gfc",
     num: "01",
     name: "GFC Hair Therapy",
-    shortName: "GFC",
+    shortName: "GFC Hair Therapy",
     tagline: "The Most Natural Way to Stop Hair Fall.",
     description:
       "GFC (Growth Factor Concentrate) extracts potent regenerative proteins from your own blood, concentrates them, and delivers them where follicles need support the most.",
@@ -28,7 +28,7 @@ const treatments = [
     id: "prp",
     num: "02",
     name: "Platelet Growth Therapy",
-    shortName: "PRP",
+    shortName: "Platelet Growth Therapy",
     tagline: "Your Blood Holds the Cure Your Hair Has Been Waiting For.",
     description:
       "Platelet Growth Therapy uses concentrated platelets loaded with growth signals and delivers them directly to hair follicles to improve stability and density.",
@@ -47,7 +47,7 @@ const treatments = [
     id: "exosome",
     num: "03",
     name: "Exosome Hair Therapy",
-    shortName: "Exosome",
+    shortName: "Exosome Hair Therapy",
     tagline: "Not Just Regrowth. Complete Follicle Regeneration.",
     description:
       "Exosome therapy is an advanced hair restoration option using stem-cell-derived signaling vesicles that communicate with follicles at a deeper biological level.",
@@ -125,15 +125,19 @@ export default function TreatmentsSection() {
 
       <div className="section-container pb-0">
         <FadeIn delay={0.3}>
-          <div className="grid grid-cols-3 gap-2 sm:flex sm:gap-3 sm:justify-center pb-1">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3 pb-1">
             {treatments.map((tr, i) => (
               <button
                 key={tr.id}
                 onClick={() => setActive(i)}
-                className={`group flex items-center justify-center sm:justify-start gap-2 sm:gap-3 rounded-xl px-2.5 sm:px-6 py-2.5 sm:py-4 border-2 transition-all duration-300 ${
+                className={`group h-full min-h-[72px] sm:min-h-[84px] flex items-center justify-center sm:justify-start gap-2 sm:gap-3 rounded-xl px-2.5 sm:px-6 py-2.5 sm:py-4 border-2 transition-all duration-300 ${
                   active === i
                     ? "bg-[#5C3D8F] border-[#5C3D8F] text-white shadow-[0_8px_32px_rgba(92,61,143,0.25)]"
                     : "bg-white border-[#E8E0F2] text-[#4A4A4A] hover:border-[#5C3D8F]/40"
+                } ${
+                  i === 0
+                    ? "col-span-2 sm:col-span-1 w-full max-w-[220px] sm:max-w-none justify-self-center sm:justify-self-auto"
+                    : "col-span-1"
                 }`}
               >
                 <span
@@ -277,24 +281,32 @@ export default function TreatmentsSection() {
 
               <div className="h-px bg-white/10 mb-7" />
 
-              <a
-                href="#hero"
-                className="btn-gold inline-flex items-center justify-center gap-2 px-7 py-3 rounded-xl text-white font-semibold text-sm tracking-wide"
-              >
-                Book Free Consultation
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+              <div className="flex items-center gap-3">
+                <a
+                  href="#hero"
+                  className="btn-gold inline-flex items-center justify-center gap-2 px-7 py-3 rounded-xl text-white font-semibold text-sm tracking-wide"
                 >
-                  <path d="M5 12h14M13 6l6 6-6 6" />
-                </svg>
-              </a>
+                  Book Your Consultation
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M5 12h14M13 6l6 6-6 6" />
+                  </svg>
+                </a>
+                <a
+                  href="tel:+916385083099"
+                  className="inline-flex lg:hidden items-center justify-center rounded-xl border border-white/30 px-6 py-3 text-white text-sm font-semibold hover:bg-white/10 transition-colors"
+                >
+                  Call Now
+                </a>
+              </div>
             </div>
           </div>
         </div>

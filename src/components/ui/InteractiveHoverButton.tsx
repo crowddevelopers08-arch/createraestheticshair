@@ -30,7 +30,7 @@ const InteractiveHoverButton = React.forwardRef<
 >(
   (
     {
-      text = "Book Free Consultation",
+      text = "Book Your Consultation",
       variant = "primary",
       href,
       type = "button",
