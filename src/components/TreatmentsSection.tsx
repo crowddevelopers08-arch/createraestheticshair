@@ -199,7 +199,7 @@ export default function TreatmentsSection() {
                 </span>
               </div>
 
-              <div className="relative aspect-[16/9] md:aspect-[15/10] overflow-hidden rounded-2xl shadow-[0_4px_24px_rgba(26,58,42,0.15)]">
+              <div className="relative aspect-[4/3] md:aspect-[15/10] overflow-hidden rounded-2xl shadow-[0_4px_24px_rgba(26,58,42,0.15)]">
                 <Image
                   src={t.image}
                   alt={`${t.name} result`}
@@ -331,4 +331,3 @@ export default function TreatmentsSection() {
     </section>
   );
 }
-
