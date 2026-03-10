@@ -4,17 +4,17 @@ import FadeIn from "./ui/FadeIn";
 const treatments = [
   {
     label: "GFC Hair Therapy",
-    image: "/gfcnew.png",
+    image: "/gfcneww.png",
     imageAlt: "GFC Hair Therapy result",
   },
   {
     label: "Platelet Growth Therapy",
-    image: "/plates.png",
+    image: "/platelast.png",
     imageAlt: "Platelet Growth Therapy result",
   },
   {
     label: "Exosome Hair Therapy",
-    image: "/exonew.png",
+    image: "/exosomenew.png",
     imageAlt: "Exosome Hair Therapy result",
   },
 ];
