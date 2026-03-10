@@ -24,12 +24,26 @@ export default function LeadForm({ variant = "hero", treatmentName }: LeadFormPr
   const [hairStage, setHairStage] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
+    try {
+      await fetch("/api/leads", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name,
+          phone,
+          location,
+          hairStage,
+          treatment: treatmentName || null,
+        }),
+      });
+    } catch (err) {
+      console.error("Lead submission error:", err);
+    } finally {
       router.push("/thank-you");
-    }, 800);
+    }
   };
 
   const inputBase =
