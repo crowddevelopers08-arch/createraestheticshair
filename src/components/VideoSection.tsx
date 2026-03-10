@@ -69,9 +69,9 @@ export default function VideoSection() {
                     loading="lazy"
                   />
                 </div>
-                <p className="text-white/60 text-xs text-center leading-relaxed">
+                {/* <p className="text-white/60 text-xs text-center leading-relaxed">
                   {reel.title}
-                </p>
+                </p> */}
               </div>
             </FadeIn>
           ))}

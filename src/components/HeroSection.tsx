@@ -1,7 +1,7 @@
 import LeadForm from "./LeadForm";
 
 const trustBadges = [
-  "FDA-Approved Treatments",
+  "US FDA-Approved Treatments",
   "Doctor Supervised Every Session",
   "No Surgery - No Downtime",
   "5-Star Google Rated Clinic",
