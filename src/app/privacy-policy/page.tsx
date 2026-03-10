@@ -1,9 +1,10 @@
-import Image from "next/image";
 import type { Metadata } from "next";
+import PageTopNavbar from "@/components/PageTopNavbar";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Creator Aesthetic Clinic",
-  description: "Privacy policy for Creator Aesthetic Clinic — how we collect, use, and protect your personal information.",
+  description:
+    "Privacy policy for Creator Aesthetic Clinic - how we collect, use, and protect your personal information.",
 };
 
 const sections = [
@@ -74,28 +75,8 @@ const sections = [
 export default function PrivacyPolicyPage() {
   return (
     <main className="min-h-screen bg-cream">
-      {/* Header */}
-      <div className="bg-forest">
-        <div className="section-container py-6 flex items-center justify-between">
-          <a href="/">
-            <Image
-              src="/CreatorAesthetic.png"
-              alt="Creator Aesthetic Clinic"
-              width={160}
-              height={46}
-              className="h-11 w-auto object-contain rounded-lg"
-            />
-          </a>
-          <a
-            href="/"
-            className="text-white/70 hover:text-white text-sm transition-colors"
-          >
-            ← Back to Home
-          </a>
-        </div>
-      </div>
+      <PageTopNavbar />
 
-      {/* Hero band */}
       <div className="bg-forest-dark">
         <div className="section-container py-10">
           <p className="text-gold text-xs font-semibold uppercase tracking-widest mb-2">
@@ -105,13 +86,12 @@ export default function PrivacyPolicyPage() {
             Privacy Policy
           </h1>
           <p className="text-white/60 text-sm mt-2">
-            Last updated: March 2026 &nbsp;·&nbsp; Creator Aesthetic Clinic,
-            Vettuvankeni, ECR Chennai
+            Last updated: March 2026 | Creator Aesthetic Clinic, Vettuvankeni,
+            ECR Chennai
           </p>
         </div>
       </div>
 
-      {/* Content */}
       <div className="section-container py-14 max-w-3xl">
         <p className="text-charcoal-mid text-sm leading-relaxed mb-10">
           At Creator Aesthetic Clinic, your privacy is important to us. This
@@ -159,7 +139,7 @@ export default function PrivacyPolicyPage() {
                   </p>
                   <p>
                     <span className="font-semibold text-forest">Hours:</span>{" "}
-                    Monday – Saturday, 10:30 AM – 8:30 PM
+                    Monday - Saturday, 10:30 AM - 8:30 PM
                   </p>
                 </div>
               )}
@@ -169,7 +149,8 @@ export default function PrivacyPolicyPage() {
 
         <div className="mt-12 pt-8 border-t border-cream-dark flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-charcoal-soft text-xs">
-            © {new Date().getFullYear()} Creator Aesthetic Clinic. All rights reserved.
+            Copyright {new Date().getFullYear()} Creator Aesthetic Clinic. All rights
+            reserved.
           </p>
           <a
             href="/"
