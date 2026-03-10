@@ -4,7 +4,7 @@ import FadeIn from "./ui/FadeIn";
 const treatments = [
   {
     label: "GFC Hair Therapy",
-    image: "/gfcneww.png",
+    image: "/kkss.png",
     imageAlt: "GFC Hair Therapy result",
   },
   {
