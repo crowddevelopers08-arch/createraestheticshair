@@ -61,9 +61,10 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-3">
             <a
               href="#hero"
+              data-book-consultation="true"
               className="btn-gold flex items-center gap-2 px-5 py-2.5 rounded-full text-white text-sm font-semibold"
             >
-              Book Your Consult
+              Book Your Consultation
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M5 12h14M13 6l6 6-6 6"/>
               </svg>
@@ -118,4 +119,3 @@ export default function Navbar() {
     </header>
   );
 }
-

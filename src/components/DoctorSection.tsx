@@ -154,6 +154,7 @@ export default function DoctorSection() {
               <div className="mt-10 flex flex-col sm:flex-row gap-4 w-full">
                 <a
                   href="#hero"
+                  data-book-consultation="true"
                   className="btn-gold flex items-center justify-center gap-2 w-full sm:w-auto px-7 py-3.5 rounded-full text-white font-semibold text-sm tracking-wide text-center"
                 >
                   Book a Consultation with Dr. Sai
@@ -161,7 +162,7 @@ export default function DoctorSection() {
                 </a>
                 <a
                   href="tel:+916385083099"
-                  className="lg:hidden flex items-center justify-center gap-2 w-full sm:w-auto border-2 border-forest text-forest rounded-full px-7 py-3.5 font-semibold text-sm hover:bg-forest hover:text-white transition-all btn-outline"
+                  className="lg:hidden btn-gold flex items-center justify-center gap-2 w-full sm:w-auto rounded-full px-7 py-3.5 text-white font-semibold text-sm"
                 >
                   Call +91 63850 83099
                 </a>
@@ -173,4 +174,3 @@ export default function DoctorSection() {
     </section>
   );
 }
-

@@ -23,6 +23,7 @@ export default function MobileBar() {
       <div className="flex">
         <a
           href="#hero"
+          data-book-consultation="true"
           className="flex-1 bg-[#5C3D8F] text-white flex items-center justify-center gap-2 py-4 font-semibold text-sm"
         >
           <svg

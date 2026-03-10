@@ -9,6 +9,7 @@ import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import MobileBar from "@/components/MobileBar";
+import BookConsultationPopup from "@/components/BookConsultationPopup";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <CTASection />
       <Footer />
       <MobileBar />
+      <BookConsultationPopup />
     </main>
   );
 }

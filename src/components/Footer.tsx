@@ -116,6 +116,7 @@ export default function Footer() {
               </a>
               <a
                 href="#hero"
+                data-book-consultation="true"
                 className="border border-white/25 text-white rounded-full px-5 py-2.5 font-semibold text-sm hover:bg-white/10 transition-colors"
               >
                 Book Consultation
@@ -173,4 +174,3 @@ export default function Footer() {
     </footer>
   );
 }
-

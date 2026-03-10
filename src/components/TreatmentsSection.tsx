@@ -19,7 +19,7 @@ const treatments = [
       "Stress or nutritional-related hair fall",
       "Anyone wanting pure growth factor treatment",
     ],
-    image: "gfccreat.png",
+    image: "gfccreatnew.png",
     badge: "Most Popular",
     potency: 2,
     bgGradient: "from-[#5C3D8F] to-[#3A2568]",
@@ -38,7 +38,7 @@ const treatments = [
       "Hairline recession in men and women",
       "Active hair shedding",
     ],
-    image: "/prpcreat.png",
+    image: "/prpcreatnew.png",
     badge: "Clinically Proven",
     potency: 3,
     bgGradient: "from-[#3A2568] to-[#261748]",
@@ -57,7 +57,7 @@ const treatments = [
       "Patients wanting faster visible response",
       "Scalp inflammation related shedding",
     ],
-    image: "/exocreat.png",
+    image: "/exocreatnew.png",
     badge: "Most Advanced",
     potency: 4,
     bgGradient: "from-[#261748] to-[#160D30]",
@@ -281,10 +281,11 @@ export default function TreatmentsSection() {
 
               <div className="h-px bg-white/10 mb-7" />
 
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 w-full max-[380px]:flex-row">
                 <a
                   href="#hero"
-                  className="btn-gold inline-flex items-center justify-center gap-2 px-7 py-3 rounded-xl text-white font-semibold text-sm tracking-wide"
+                  data-book-consultation="true"
+                  className="btn-gold inline-flex items-center justify-center gap-2 px-7 py-3 rounded-xl text-white font-semibold text-sm tracking-wide max-[380px]:flex-1 max-[380px]:min-w-0 max-[380px]:px-3"
                 >
                   Book Your Consultation
                   <svg
@@ -296,13 +297,14 @@ export default function TreatmentsSection() {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="max-sm:hidden"
                   >
                     <path d="M5 12h14M13 6l6 6-6 6" />
                   </svg>
                 </a>
                 <a
                   href="tel:+916385083099"
-                  className="inline-flex lg:hidden items-center justify-center rounded-xl border border-white/30 px-6 py-3 text-white text-sm font-semibold hover:bg-white/10 transition-colors"
+                  className="inline-flex lg:hidden items-center justify-center rounded-xl border border-white/30 px-6 py-3 text-white text-sm font-semibold hover:bg-white/10 transition-colors max-[380px]:basis-[40%] max-[380px]:min-w-0 max-[380px]:px-2"
                 >
                   Call Now
                 </a>
@@ -320,21 +322,22 @@ export default function TreatmentsSection() {
 
       <div className="bg-[#FFFFFF] py-8 md:py-10 max-[470px]:py-6 section-container">
         <FadeIn>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <div className="grid grid-cols-3 gap-3">
             {[
-              "Blood-derived, no synthetic chemicals",
               "Every session supervised by Dr. Sai",
               "Sessions under 60 minutes",
-              "FDA-approved protocols",
+              "US FDA-approved protocols",
             ].map((item) => (
               <div
                 key={item}
-                className="rounded-xl border border-[#E8E0F2] bg-[#FDFBFF] px-3 py-3 flex items-center gap-2.5 text-[#5C3D8F] text-xs font-medium shadow-[0_2px_12px_rgba(92,61,143,0.06)]"
+                className="w-full max-w-[260px] lg:max-w-[380px] mx-auto rounded-xl border border-[#E8E0F2] bg-[#FDFBFF] px-3.5 lg:px-5 py-3 flex flex-col items-center justify-center gap-2 text-center text-[#5C3D8F] text-xs font-medium shadow-[0_2px_12px_rgba(92,61,143,0.06)]"
               >
                 <span className="w-5 h-5 rounded-full bg-[#D4607A]/12 text-[#D4607A] flex items-center justify-center text-[10px] font-bold">
                   ✓
                 </span>
-                <span>{item}</span>
+                <span className="max-w-[20ch] lg:max-w-none lg:whitespace-nowrap">
+                  {item}
+                </span>
               </div>
             ))}
           </div>

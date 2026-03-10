@@ -82,6 +82,7 @@ export default function VideoSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-[470px]:mt-7 mt-14 w-full">
             <a
               href="#hero"
+              data-book-consultation="true"
               className="btn-gold flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 rounded-full text-white font-semibold text-sm tracking-wide"
             >
               Book Your Consultation

@@ -2,7 +2,7 @@ import FadeIn from "./ui/FadeIn";
 
 export default function CTASection() {
   return (
-    <section id="cta" className="relative overflow-hidden py-12 md:py-14 lg:py-16 bg-[#2C1A4B]">
+    <section id="cta" className="relative overflow-hidden py-12 md:py-12 lg:py-12 max-[470px]:py-6 bg-[#2C1A4B]">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 opacity-70 bg-[radial-gradient(circle_at_10%_10%,rgba(212,96,122,0.26),transparent_45%),radial-gradient(circle_at_90%_70%,rgba(122,92,184,0.35),transparent_40%),linear-gradient(135deg,#5C3D8F_0%,#3A2568_55%,#24143f_100%)]" />
         <div className="absolute -top-24 -left-20 w-72 h-72 rounded-full border border-white/10" />
@@ -39,6 +39,7 @@ export default function CTASection() {
             <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto justify-center">
               <a
                 href="#hero"
+                data-book-consultation="true"
                 className="btn-gold inline-flex items-center justify-center gap-2 w-full sm:w-auto px-7 py-3.5 rounded-full text-white font-semibold text-sm shadow-[0_10px_28px_rgba(212,96,122,0.35)]"
               >
                 Book Your Consultation
@@ -55,11 +56,27 @@ export default function CTASection() {
                   <path d="M5 12h14M13 6l6 6-6 6" />
                 </svg>
               </a>
+              <div className="flex sm:hidden gap-3 w-full">
+                <a
+                  href="tel:+916385083099"
+                  className="inline-flex items-center justify-center w-1/2 px-4 py-3.5 rounded-full border border-white/35 bg-white/5 text-white font-semibold text-sm hover:bg-white/10 transition-colors"
+                >
+                  Call Us
+                </a>
+                <a
+                  href="https://wa.me/916385083099?text=Hi%2C%20I%20want%20to%20book%20a%20hair%20consultation"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center w-1/2 px-4 py-3.5 rounded-full border border-white/35 bg-white/5 text-white font-semibold text-sm hover:bg-white/10 transition-colors"
+                >
+                  WhatsApp Us
+                </a>
+              </div>
               <a
                 href="https://wa.me/916385083099?text=Hi%2C%20I%20want%20to%20book%20a%20hair%20consultation"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-full sm:w-auto px-7 py-3.5 rounded-full border border-white/35 bg-white/5 text-white font-semibold text-sm hover:bg-white/10 transition-colors"
+                className="hidden sm:inline-flex items-center justify-center w-full sm:w-auto px-7 py-3.5 rounded-full border border-white/35 bg-white/5 text-white font-semibold text-sm hover:bg-white/10 transition-colors"
               >
                 WhatsApp Us
               </a>

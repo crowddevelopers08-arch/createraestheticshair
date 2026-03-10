@@ -4,17 +4,17 @@ import FadeIn from "./ui/FadeIn";
 const treatments = [
   {
     label: "GFC Hair Therapy",
-    image: "/gfc.png",
+    image: "/gfcnew.png",
     imageAlt: "GFC Hair Therapy result",
   },
   {
     label: "Platelet Growth Therapy",
-    image: "/plate.png",
+    image: "/plates.png",
     imageAlt: "Platelet Growth Therapy result",
   },
   {
     label: "Exosome Hair Therapy",
-    image: "/exo.png",
+    image: "/exonew.png",
     imageAlt: "Exosome Hair Therapy result",
   },
 ];
@@ -77,6 +77,7 @@ export default function BeforeAfterSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
             <a
               href="#hero"
+              data-book-consultation="true"
               className="btn-gold flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 rounded-full text-white font-semibold text-sm tracking-wide"
             >
               Book Your Consultation
