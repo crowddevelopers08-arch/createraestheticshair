@@ -231,7 +231,7 @@ export default function ThankYouPage() {
 
           {/* ── CTA ── */}
           <div className={`ty-fade-in d5 ${show ? "visible" : ""}`}>
-            <a href="/" className="ty-btn px-10 py-4 rounded-full text-white font-semibold text-sm tracking-wide border-none cursor-pointer inline-block">
+            <a href="/skintreatment" className="ty-btn px-10 py-4 rounded-full text-white font-semibold text-sm tracking-wide border-none cursor-pointer inline-block">
               Back to Home
             </a>
             <p style={{ fontSize:"12px", color:"rgba(255, 255, 255, 0.3)", marginTop:"16px" }}>

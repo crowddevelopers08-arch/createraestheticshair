@@ -35,7 +35,7 @@ export default function Navbars() {
           <div className="flex items-center justify-between py-3">
 
             {/* Logo */}
-            <Link href="/" className="flex items-center flex-shrink-0">
+            <Link href="/skintreatment" className="flex items-center flex-shrink-0">
               <div className="relative" style={{ width: "130px", height: "44px" }}>
                 <Image
                   src="/Creator-Aesthetic-logo.png"

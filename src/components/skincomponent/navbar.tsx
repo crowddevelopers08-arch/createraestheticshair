@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const NAV_LINKS = [
-  { label: "Home", href: "/" },
+  { label: "Home", href: "/skintreatment" },
   { label: "Treatments", href: "#skin-treatments" },
   { label: "Doctor", href: "#doctor" },
   { label: "Testimonial", href: "#testimonials" },
@@ -328,7 +328,7 @@ export default function Navbar() {
       <nav className={`nb-root ${scrolled ? "scrolled" : "top"}`}>
         <div className="nb-inner">
           {/* Logo */}
-          <Link href="/" className="nb-logo">
+          <Link href="/skintreatment" className="nb-logo">
             <Image
                 src="/Creator-Aesthetic-logo.png"
                 alt="CrowMedi Logo"

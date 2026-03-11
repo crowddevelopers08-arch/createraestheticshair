@@ -153,7 +153,7 @@ export default function PrivacyPolicyPage() {
             reserved.
           </p>
           <a
-            href="/"
+            href="/hair-treatment"
             className="btn-forest text-white text-sm font-semibold px-6 py-2.5 rounded-full"
           >
             Back to Home

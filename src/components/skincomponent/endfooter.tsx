@@ -39,7 +39,7 @@ export default function Footerred() {
         {/* Right — links */}
         <div className="flex items-center gap-5">
           <Link
-            href="/privacy-policy"
+            href="/privacypolicy"
             className="text-[12px] transition-colors duration-200"
             style={{ color: "rgba(255,255,255,0.4)", fontFamily: "Outfit, sans-serif" }}
             onMouseEnter={e => (e.currentTarget.style.color = "#ec778d")}

@@ -86,7 +86,7 @@ export default function PrivacyPolicy() {
 
             {/* Back to Home */}
             <a
-              href="/"
+              href="/skintreatment"
               style={{
                 display: "inline-flex",
                 alignItems: "center",
@@ -215,7 +215,7 @@ export default function PrivacyPolicy() {
           {/* ── Bottom Back to Home ── */}
           <div className="pp-fade-in" style={{ marginTop: 32, display: "flex", justifyContent: "center", animationDelay: "0.7s" }}>
             <a
-              href="/"
+              href="/skintreatment"
               style={{
                 display: "inline-flex",
                 alignItems: "center",
