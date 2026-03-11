@@ -24,6 +24,18 @@ export const metadata: Metadata = {
     locale: "en_IN",
     type: "website",
   },
+  icons: {
+    icon: [
+      { url: "/CreatorAesthetic.png", sizes: "any", type: "image/webp" },
+      { url: "/CreatorAesthetic.png", sizes: "16x16", type: "image/webp" },
+      { url: "/CreatorAesthetic.png", sizes: "32x32", type: "image/webp" },
+    ],
+    apple: [{ url: "/CreatorAesthetic.png", sizes: "180x180", type: "image/webp" }],
+    other: [
+      { rel: "icon", url: "/CreatorAesthetic.png", sizes: "192x192", type: "image/webp" },
+      { rel: "icon", url: "/CreatorAesthetic.png", sizes: "512x512", type: "image/webp" },
+    ],
+  },
 };
 
 export default function RootLayout({
