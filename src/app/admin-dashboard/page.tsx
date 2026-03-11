@@ -31,6 +31,7 @@ interface Lead {
   name: string
   phone: string
   email?: string
+  location?: string
   treatment?: string      // Changed from 'course' to 'treatment'
   concern?: string        // Creator Aesthetic Clinic specific field
   preferredDateTime?: string  // Creator Aesthetic Clinic specific field
@@ -261,9 +262,10 @@ export default function LeadsTable({
       "Name",
       "Phone",
       "Email",
-      "Treatment Interested",  // Changed from Course
-      "Hair Concern",          // Creator Aesthetic Clinic specific
-      "Preferred Time",        // Creator Aesthetic Clinic specific
+      "Location",
+      "Treatment Interested",
+      "Concern",
+      "Preferred Time",
       "Status",
       "Priority",
       "Form Name",
@@ -274,14 +276,15 @@ export default function LeadsTable({
       "Created At",
       "Updated At",
     ]
-    
+
     const csvData = filteredLeads.map((lead) => [
       lead.name || "",
       lead.phone || "",
       lead.email || "",
-      lead.treatment || "",              // Changed from course
-      lead.concern || "",               // Creator Aesthetic Clinic specific
-      lead.preferredDateTime || "",     // Creator Aesthetic Clinic specific
+      lead.location || "",
+      lead.treatment || "",
+      lead.concern || "",
+      lead.preferredDateTime || "",
       lead.status || "",
       lead.priority || "",
       lead.formName || "",
@@ -646,6 +649,12 @@ export default function LeadsTable({
                                     <span className="text-sm text-gray-700 truncate max-w-[120px]">{lead.email}</span>
                                   </div>
                                 )}
+                                {lead.location && (
+                                  <div className="flex items-center gap-2">
+                                    <span className="text-gray-400 text-xs">📍</span>
+                                    <span className="text-xs text-gray-500">{lead.location}</span>
+                                  </div>
+                                )}
                               </div>
                             </td>
                             <td className="p-4 align-middle">
@@ -718,6 +727,7 @@ export default function LeadsTable({
                                     <div className="space-y-2 text-gray-700">
                                       <div><span className="font-medium">Source:</span> {lead.source || "creatoraesthetic.in"}</div>
                                       <div><span className="font-medium">Consent:</span> {lead.consent ? "Yes" : "No"}</div>
+                                      <div><span className="font-medium">Location:</span> {lead.location || "Not specified"}</div>
                                       <div><span className="font-medium">Treatment:</span> {lead.treatment || "Not specified"}</div>
                                       <div><span className="font-medium">Concern:</span> {lead.concern || "Not specified"}</div>
                                       <div><span className="font-medium">Preferred Time:</span> {lead.preferredDateTime || "Not specified"}</div>
