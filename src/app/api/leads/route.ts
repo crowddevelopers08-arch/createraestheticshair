@@ -21,7 +21,7 @@ export async function GET() {
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { name, phone, location, hairStage, treatment } = body;
+    const { name, phone, location, hairStage, treatment, source, formName } = body;
 
     if (!name || !phone) {
       return NextResponse.json(
@@ -37,8 +37,8 @@ export async function POST(req: NextRequest) {
         location: location || null,
         concern: hairStage || null,
         treatment: treatment || null,
-        source: process.env.NEXT_PUBLIC_SITE_URL || "https://creatoraesthetic.in",
-        formName: "Hair Consultation Form",
+        source: source || process.env.NEXT_PUBLIC_SITE_URL || "https://creatoraesthetic.in",
+        formName: formName || "Hair Consultation Form",
       },
     });
 

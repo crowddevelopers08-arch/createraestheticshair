@@ -28,6 +28,11 @@ export default function LeadForm({ variant = "hero", treatmentName }: LeadFormPr
     e.preventDefault();
     setLoading(true);
     try {
+      const formName =
+        variant === "treatment" && treatmentName
+          ? `${treatmentName} Consultation`
+          : "Hair Consultation Form";
+
       await fetch("/api/leads", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -37,6 +42,8 @@ export default function LeadForm({ variant = "hero", treatmentName }: LeadFormPr
           location,
           hairStage,
           treatment: treatmentName || null,
+          source: window.location.href,
+          formName,
         }),
       });
     } catch (err) {
