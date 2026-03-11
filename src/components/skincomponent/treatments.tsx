@@ -165,8 +165,13 @@ export default function SkinTreatments() {
   const current = treatments.find((t) => t.id === active) ?? treatments[0];
   const activeIndex = treatments.findIndex((t) => t.id === active);
   const tabsScrollRef = useRef<HTMLDivElement>(null);
+  const isMounted = useRef(false);
 
   useEffect(() => {
+    if (!isMounted.current) {
+      isMounted.current = true;
+      return;
+    }
     const container = tabsScrollRef.current;
     if (!container) return;
     const activeBtn = container.querySelector<HTMLButtonElement>(".sk-tab.active");
