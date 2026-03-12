@@ -131,8 +131,6 @@ export default function PrivacyPolicy() {
             >
               Privacy Policy
             </h1>
-
-            {/* divider line */}
             <div className="pp-line" />
 
             {/* meta row */}
