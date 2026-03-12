@@ -52,7 +52,7 @@ export default function DoctorSection() {
               {/* Photo placeholder */}
               <div className="relative w-full max-w-72 h-80 lg:max-w-none lg:w-full lg:h-96 rounded-3xl overflow-hidden border-4 border-[#D4607A]/30 shadow-[0_8px_48px_rgba(92,61,143,0.15)]">
                 <Image
-                  src="/creatdoc.png"
+                  src="https://ik.imagekit.io/meafuhrp0/public/creatdoc.png?updatedAt=1773322247596"
                   alt="Dr. Sai - Creator Aesthetic Clinic"
                   fill
                   className="object-cover object-top"

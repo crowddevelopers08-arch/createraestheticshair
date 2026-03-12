@@ -9,11 +9,11 @@ interface LeadFormProps {
 }
 
 const HAIR_LOSS_STAGES = [
-  { id: "stage1", label: "Stage 1", sub: "Minimal loss", image: "/st1.jpeg" },
-  { id: "stage2", label: "Stage 2", sub: "Mild receding", image: "/st2.jpeg" },
-  { id: "stage3", label: "Stage 3", sub: "Moderate", image: "/st3.jpeg" },
-  { id: "stage4", label: "Stage 4", sub: "Significant", image: "/st4.jpeg" },
-  { id: "stage5", label: "Stage 5", sub: "Advanced", image: "/st5.jpeg" },
+  { id: "stage1", label: "Stage 1", sub: "Minimal loss", image: "https://ik.imagekit.io/meafuhrp0/public/st1.jpeg?updatedAt=1773322231443" },
+  { id: "stage2", label: "Stage 2", sub: "Mild receding", image: "https://ik.imagekit.io/meafuhrp0/public/st2.jpeg?updatedAt=1773322231686" },
+  { id: "stage3", label: "Stage 3", sub: "Moderate", image: "https://ik.imagekit.io/meafuhrp0/public/st3.jpeg?updatedAt=1773322231436" },
+  { id: "stage4", label: "Stage 4", sub: "Significant", image: "https://ik.imagekit.io/meafuhrp0/public/st4.jpeg?updatedAt=1773322231351" },
+  { id: "stage5", label: "Stage 5", sub: "Advanced", image: "https://ik.imagekit.io/meafuhrp0/public/st5.jpeg?updatedAt=1773322231624" },
 ];
 
 export default function LeadForm({ variant = "hero", treatmentName }: LeadFormProps) {

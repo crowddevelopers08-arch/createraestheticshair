@@ -390,7 +390,7 @@ export default function DoctorSection() {
                   }}
                 >
                   <Image
-                    src="/creatdoc.png"
+                    src="https://ik.imagekit.io/meafuhrp0/public/creatdoc.png?updatedAt=1773322247596"
                     alt="Dr. Sai — Creator Aethetic Clinic"
                     fill
                     style={{ objectFit: "cover", objectPosition: "top" }}
@@ -413,7 +413,7 @@ export default function DoctorSection() {
                   }}
                 >
                   <Image
-                    src="/2026-01-27.webp"
+                    src="https://ik.imagekit.io/meafuhrp0/public/2026-01-27.webp?updatedAt=1773322232418"
                     alt="Dr. Sai — Consultation"
                     fill
                     style={{ objectFit: "cover", objectPosition: "center" }}

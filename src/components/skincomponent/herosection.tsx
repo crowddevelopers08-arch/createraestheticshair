@@ -5,8 +5,8 @@ import { useState, useEffect } from "react";
 import SkinHeroForm from "./skinheroform";
 
 const BG_IMAGES = [
-  "/female-doctor.jpg",
-  "/contact.avif",
+  "https://ik.imagekit.io/meafuhrp0/public/female-doctor.jpg?updatedAt=1773322232089",
+  "https://ik.imagekit.io/meafuhrp0/public/contact.avif?updatedAt=1773322231343",
 ];
 
 const TRUST_BADGES = [

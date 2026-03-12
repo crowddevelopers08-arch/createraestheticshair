@@ -74,7 +74,7 @@ export default function FAQSection() {
             <div className="hidden lg:block lg:sticky lg:top-24 space-y-4">
               <div className="relative h-[250px] rounded-2xl overflow-hidden border border-[#E8E0F2]">
                 <Image
-                  src="/fa1.jpg"
+                  src="https://ik.imagekit.io/meafuhrp0/public/fa1.jpg?updatedAt=1773322231695"
                   alt="Dr. Sai at Creator Aesthetic Clinic"
                   fill
                   className="object-cover"
@@ -86,7 +86,7 @@ export default function FAQSection() {
               </div>
               <div className="relative h-[180px] rounded-2xl overflow-hidden border border-[#E8E0F2]">
                 <Image
-                  src="/fa2.jpg"
+                  src="https://ik.imagekit.io/meafuhrp0/public/fa2.jpg?updatedAt=1773322232414"
                   alt="Hair restoration treatment area"
                   fill
                   className="object-cover"

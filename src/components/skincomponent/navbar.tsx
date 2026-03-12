@@ -330,7 +330,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/skintreatment" className="nb-logo">
             <Image
-                src="/Creator-Aesthetic-logo.png"
+                src="https://ik.imagekit.io/meafuhrp0/public/Creator-Aesthetic-logo.png?updatedAt=1773322233108"
                 alt="CrowMedi Logo"
                 width={160}
                 height={52}

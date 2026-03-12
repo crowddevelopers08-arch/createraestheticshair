@@ -19,7 +19,7 @@ export default function HeroSection() {
       className="hero-section relative min-h-screen overflow-hidden"
       style={{
         backgroundImage:
-          "linear-gradient(rgba(46,26,79,0.84), rgba(46,26,79,0.86)), url('/ban.jpg')",
+          "linear-gradient(rgba(46,26,79,0.84), rgba(46,26,79,0.86)), url('https://ik.imagekit.io/meafuhrp0/public/ban.jpg?updatedAt=1773322232470')",
         backgroundSize: "cover",
         backgroundPosition: "center top",
       }}

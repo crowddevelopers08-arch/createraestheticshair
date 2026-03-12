@@ -14,7 +14,7 @@ const CARDS = [
     tagColor: "#6d5b8f",
     tagBg: "rgba(109,91,143,0.12)",
     tagBorder: "rgba(109,91,143,0.3)",
-    image: "/before5.jpg",
+    image: "https://ik.imagekit.io/meafuhrp0/public/before5.jpg?updatedAt=1773322231367",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const CARDS = [
     tagColor: "#ec778d",
     tagBg: "rgba(236,119,141,0.12)",
     tagBorder: "rgba(236,119,141,0.35)",
-    image: "/botoxs.png",
+    image: "https://ik.imagekit.io/meafuhrp0/public/botoxs.png?updatedAt=1773322249939",
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const CARDS = [
     tagColor: "#f2a0b5",
     tagBg: "rgba(242,160,181,0.12)",
     tagBorder: "rgba(242,160,181,0.35)",
-    image: "/peels.png",
+    image: "https://ik.imagekit.io/meafuhrp0/public/peels.png?updatedAt=1773322250030",
   },
   {
     id: 4,
@@ -47,19 +47,8 @@ const CARDS = [
     tagColor: "#9b88c2",
     tagBg: "rgba(155,136,194,0.12)",
     tagBorder: "rgba(155,136,194,0.35)",
-    image: "/BA-Template-3-5.jpg",
+    image: "https://ik.imagekit.io/meafuhrp0/public/BA-Template-3-5.jpg?updatedAt=1773322231157",
   },
-  // {
-  //   id: 5,
-  //   tag: "Pigmentation",
-  //   name: "Q-Switch",
-  //   desc: "Targeted laser energy breaks down stubborn melanin clusters to clear dark spots, melasma, and sun damage.",
-  //   stat: "3–5 sessions for full clarity",
-  //   tagColor: "#d95f76",
-  //   tagBg: "rgba(217,95,118,0.12)",
-  //   tagBorder: "rgba(217,95,118,0.35)",
-  //   image: "/Pigmentation.jpg",
-  // },
 ];
 
 export default function BeforeAfterSection() {

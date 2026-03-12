@@ -11,7 +11,7 @@ export default function Footer() {
             {/* Logo */}
             <div className="mb-6">
               <Image
-                src="/CreatorAesthetic.png"
+                src="https://ik.imagekit.io/meafuhrp0/public/CreatorAesthetic.png?updatedAt=1773322232935"
                 alt="Creator Aesthetic Clinic"
                 width={180}
                 height={52}

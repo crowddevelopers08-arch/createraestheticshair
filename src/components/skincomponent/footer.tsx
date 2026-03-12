@@ -177,7 +177,7 @@ export default function VisitSection() {
 
                 {/* IMAGE 1 — tall left, big top-left radius */}
                 <div className="vs-img1 absolute overflow-hidden" style={{top:0,left:0,width:"56%",height:"100%",borderRadius:"100px 20px 20px 20px",boxShadow:"0 20px 56px rgba(0,0,0,0.14)",zIndex:2}}>
-                  <img src="/image.png" alt="Creator Aethetic Clinic" style={{width:"100%",height:"100%",objectFit:"cover",objectPosition:"top center"}} />
+                  <img src="https://ik.imagekit.io/meafuhrp0/public/image.png?updatedAt=1773322235376" alt="Creator Aethetic Clinic" style={{width:"100%",height:"100%",objectFit:"cover",objectPosition:"top center"}} />
                   <div className="absolute inset-0" style={{background:"linear-gradient(to top,rgba(0,0,0,0.45) 0%,transparent 50%)"}} />
                   <div className="absolute bottom-4 left-3 right-3">
                     <div className="flex items-center gap-2 px-3 py-2 rounded-xl" style={{background:"rgba(255,255,255,0.96)",backdropFilter:"blur(10px)"}}>
@@ -189,7 +189,7 @@ export default function VisitSection() {
 
                 {/* IMAGE 2 — shorter right, big bottom-right radius */}
                 <div className="vs-img2 absolute overflow-hidden" style={{bottom:0,right:0,width:"54%",height:"70%",borderRadius:"20px 20px 100px 20px",boxShadow:"0 18px 52px rgba(0,0,0,0.16)",border:"3.5px solid #fff",zIndex:3}}>
-                  <img src="/fa2.jpg" alt="Dr. Sai — Hair Specialist ECR" style={{width:"100%",height:"100%",objectFit:"cover",objectPosition:"top center"}} />
+                  <img src="https://ik.imagekit.io/meafuhrp0/public/fa2.jpg?updatedAt=1773322232414" alt="Dr. Sai — Hair Specialist ECR" style={{width:"100%",height:"100%",objectFit:"cover",objectPosition:"top center"}} />
                   <div className="absolute inset-0" style={{background:"linear-gradient(to top,rgba(0,0,0,0.3) 0%,transparent 55%)"}} />
                 </div>
 

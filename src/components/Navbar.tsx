@@ -34,7 +34,7 @@ export default function Navbar() {
           {/* Logo */}
           <a href="#hero" className="flex items-center">
             <Image
-              src="/CreatorAesthetic.png"
+              src="https://ik.imagekit.io/meafuhrp0/public/CreatorAesthetic.png?updatedAt=1773322232935"
               alt="Creator Aesthetic Clinic"
               width={160}
               height={46}

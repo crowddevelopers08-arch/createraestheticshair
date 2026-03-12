@@ -18,7 +18,7 @@ const treatments = [
       "Fine lines & loss of firmness",
       "Uneven skin tone or pigmentation",
     ],
-    image: "/treatment.avif",
+    image: "https://ik.imagekit.io/meafuhrp0/public/treatment.avif?updatedAt=1773322231705",
     imageAlt: "Red light therapy skin treatment session",
   },
   {
@@ -35,7 +35,7 @@ const treatments = [
       "Anti-ageing & skin rejuvenation",
       "Bridal glow preparation",
     ],
-    image: "/gulta.jpg",
+    image: "https://ik.imagekit.io/meafuhrp0/public/gulta.jpg?updatedAt=1773322231766",
     imageAlt: "Gluta collagen skin brightening treatment",
   },
   {
@@ -52,7 +52,7 @@ const treatments = [
       "Overall facial tightening & contouring",
       "Ages 28–60 seeking a non-surgical lift",
     ],
-    image: "/treatment2.avif",
+    image: "https://ik.imagekit.io/meafuhrp0/public/treatment2.avif?updatedAt=1773322231942",
     imageAlt: "HIFU facial tightening treatment",
   },
   {
@@ -69,7 +69,7 @@ const treatments = [
       "Rough or uneven skin texture",
       "Stretch marks on face or body",
     ],
-    image: "/treatments3.avif",
+    image: "https://ik.imagekit.io/meafuhrp0/public/treatments3.avif?updatedAt=1773322231901",
     imageAlt: "MNRF microneedling radiofrequency skin treatment",
   },
   {
@@ -86,7 +86,7 @@ const treatments = [
       "Underarm darkness due to shaving irritation",
       "People tired of repeated waxing",
     ],
-    image: "/treatment3.avif",
+    image: "https://ik.imagekit.io/meafuhrp0/public/treatment3.avif?updatedAt=1773322231984",
     imageAlt: "Laser hair removal treatment session",
   },
 ];

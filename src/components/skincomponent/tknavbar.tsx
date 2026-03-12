@@ -38,7 +38,7 @@ export default function Navbars() {
             <Link href="/skintreatment" className="flex items-center flex-shrink-0">
               <div className="relative" style={{ width: "130px", height: "44px" }}>
                 <Image
-                  src="/Creator-Aesthetic-logo.png"
+                  src="https://ik.imagekit.io/meafuhrp0/public/Creator-Aesthetic-logo.png?updatedAt=1773322233108"
                   alt="Creator Aethetic Clinic"
                   fill
                   style={{ objectFit: "contain", objectPosition: "left center" }}
