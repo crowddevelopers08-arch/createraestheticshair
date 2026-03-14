@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 
 export default function ThankYouPage() {
   return (
+    <>
     <main className="min-h-screen bg-cream">
       <PageTopNavbar />
 
@@ -91,5 +92,6 @@ export default function ThankYouPage() {
     <Script id="google-ads-conversion" strategy="afterInteractive">
       {`gtag('event', 'conversion', {'send_to': 'AW-17918087349/xbMQCNOzpogcELWhgeBC'});`}
     </Script>
+    </>
   );
 }
