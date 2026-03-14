@@ -50,9 +50,6 @@ export default function RootLayout({
           name="viewport"
           content="width=device-width, initial-scale=1, viewport-fit=cover"
         />
-      </head>
-      <body className="antialiased">
-        {children}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-17918087349"
           strategy="afterInteractive"
@@ -65,6 +62,9 @@ export default function RootLayout({
             gtag('config', 'AW-17918087349');
           `}
         </Script>
+      </head>
+      <body className="antialiased">
+        {children}
         <Script
           src="//www.instagram.com/embed.js"
           strategy="lazyOnload"

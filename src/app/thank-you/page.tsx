@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PageTopNavbar from "@/components/PageTopNavbar";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Thank You | Creator Aesthetic Clinic",
@@ -87,5 +88,8 @@ export default function ThankYouPage() {
         </p>
       </div>
     </main>
+    <Script id="google-ads-conversion" strategy="afterInteractive">
+      {`gtag('event', 'conversion', {'send_to': 'AW-17918087349/xbMQCNOzpogcELWhgeBC'});`}
+    </Script>
   );
 }
