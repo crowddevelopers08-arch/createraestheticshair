@@ -19,13 +19,13 @@ const CARDS = [
   {
     id: 2,
     tag: "Anti-Ageing",
-    name: "Botox & Fillers",
-    desc: "Precision-placed botulinum toxin and hyaluronic acid fillers to smooth lines and restore youthful volume.",
+    name: "Laser Hair Removal",
+    desc: "LHR reduces unwanted hair growth, giving smoother skin with fewer ingrown hairs and less need for shaving or waxing.",
     stat: "Results last 6–12 months",
     tagColor: "#ec778d",
     tagBg: "rgba(236,119,141,0.12)",
     tagBorder: "rgba(236,119,141,0.35)",
-    image: "https://ik.imagekit.io/meafuhrp0/public/botoxs.png?updatedAt=1773322249939",
+    image: "https://ik.imagekit.io/xivdiehvf/LHR.jpg",
   },
   {
     id: 3,
