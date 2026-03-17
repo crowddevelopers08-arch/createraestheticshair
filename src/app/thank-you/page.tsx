@@ -89,9 +89,6 @@ export default function ThankYouPage() {
         </p>
       </div>
     </main>
-    <Script id="google-ads-conversion" strategy="afterInteractive">
-      {`gtag('event', 'conversion', {'send_to': 'AW-17918087349/xbMQCNOzpogcELWhgeBC'});`}
-    </Script>
     </>
   );
 }

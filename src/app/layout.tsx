@@ -50,18 +50,6 @@ export default function RootLayout({
           name="viewport"
           content="width=device-width, initial-scale=1, viewport-fit=cover"
         />
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17918087349"
-          strategy="afterInteractive"
-        />
-        <Script id="google-ads" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-17918087349');
-          `}
-        </Script>
       </head>
       <body className="antialiased">
         {children}
