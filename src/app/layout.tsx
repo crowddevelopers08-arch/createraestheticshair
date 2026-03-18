@@ -11,13 +11,13 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Hair Restoration Chennai | GFC, PRP & Exosome Therapy | Creator Aesthetic Clinic ECR",
+  title: "Best Skin and Hair Clinic",
   description:
     "Non-surgical hair restoration in Chennai. GFC Hair Therapy, Platelet Growth Therapy & Exosome treatments — personally supervised by Dr. Sai at Creator Aesthetic Clinic, Vettuvankeni ECR.",
   keywords:
     "hair restoration Chennai, GFC therapy Chennai, PRP hair treatment ECR, non-surgical hair loss Chennai, hair clinic ECR, exosome hair therapy",
   openGraph: {
-    title: "Creator Aesthetic Clinic — Hair Restoration ECR Chennai",
+    title: "Best Skin and Hair Clinic",
     description:
       "Doctor-supervised GFC, PRP & Exosome hair therapy. No surgery. No downtime. ECR Chennai.",
     siteName: "Creator Aesthetic Clinic",
