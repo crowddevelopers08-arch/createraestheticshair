@@ -11,6 +11,9 @@ const page = () => {
       <Navbars />
       <ThankYouPage />
       <Footerred />
+      <Script id="google-ads-conversion" strategy="afterInteractive">
+        {`gtag('event', 'conversion', {'send_to': 'AW-17918087349/iu8ACKDn6oocELWhgeBC'});`}
+      </Script>
     </div>
   );
 };

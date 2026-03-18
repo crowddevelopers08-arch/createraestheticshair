@@ -1,3 +1,4 @@
+
 // import NewHairConsultationCardExact from "@/component/contactform";
 
 import Script from "next/script";
@@ -15,20 +16,10 @@ import TestimonialsSection from "@/components/skincomponent/testominal";
 import SkinTreatments from "@/components/skincomponent/treatments";
 import VideoSection from "@/components/skincomponent/videos";
 
+
 export default function Home() {
   return (
     <div>
-      {/* Google Tag Manager - Script */}
-      <Script id="google-tag-manager" strategy="afterInteractive">
-        {`
-          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-XXXXXXX'); // Replace GTM-XXXXXXX with your GTM ID
-        `}
-      </Script>
-
       <Navbar />
       <SkinHeroSection />
       <BeforeAfterSection />
@@ -42,18 +33,29 @@ export default function Home() {
       <Footerred />
       <MobileActionBar />
       <ScrollToTop />
+      {/* Google Ads */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17918087349"
+        strategy="afterInteractive"
+      />
+      <Script id="google-ads-skin" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-17918087349');
+        `}
+      </Script>
 
-      {/* Google Tag Manager - Noscript (for noscript fallback) */}
-      <noscript>
-        <iframe 
-          src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" // Replace with your GTM ID
-          height="0" 
-          width="0" 
-          style={{ display: "none", visibility: "hidden" }}
-        />
-      </noscript>
+      {/* Google Tag Manager */}
+      <Script id="gtm" strategy="afterInteractive">
+        {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5WTBTLVH');`}
+      </Script>
 
-      {/* MS Clarity Script */}
       <Script id="ms-clarity" strategy="afterInteractive">
         {`
           (function(c,l,a,r,i,t,y){
@@ -63,8 +65,6 @@ export default function Home() {
           })(window, document, "clarity", "script", "vvltrf4a78");
         `}
       </Script>
-
-      {/* Meta Pixel Script */}
       <Script id="meta-pixel" strategy="afterInteractive">
         {`
           !function(f,b,e,v,n,t,s)
@@ -79,15 +79,9 @@ export default function Home() {
           fbq('track', 'PageView');
         `}
       </Script>
-
-      {/* Meta Pixel Noscript */}
       <noscript>
-        <img 
-          height="1" 
-          width="1" 
-          style={{ display: "none" }}
+        <img height="1" width="1" style={{display:"none"}}
           src="https://www.facebook.com/tr?id=1478172490519418&ev=PageView&noscript=1"
-          alt=""
         />
       </noscript>
     </div>
