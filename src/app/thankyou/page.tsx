@@ -11,8 +11,17 @@ const page = () => {
       <Navbars />
       <ThankYouPage />
       <Footerred />
-      <Script id="google-ads-conversion" strategy="afterInteractive">
+      {/* <Script id="google-ads-conversion" strategy="afterInteractive">
         {`gtag('event', 'conversion', {'send_to': 'AW-17918087349/iu8ACKDn6oocELWhgeBC'});`}
+      </Script> */}
+      <Script id="google-ads-conversion-skin" strategy="afterInteractive">
+        {`
+          gtag('event', 'conversion', {
+            'send_to': 'AW-17918087349/InJCCPuT940cELWhgeBC',
+            'value': 1.0,
+            'currency': 'INR'
+          });
+        `}
       </Script>
     </div>
   );
