@@ -64,7 +64,7 @@ export default function RootLayout({
       <body className="antialiased">
         {children}
 
-        {/* Google Ads — Global (fires on all pages for conversion tracking) */}
+        {/* Google Ads — Global */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-17918087349"
           strategy="afterInteractive"
@@ -75,20 +75,6 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'AW-17918087349');
-            function gtag_report_conversion(url) {
-              var callback = function () {
-                if (typeof(url) != 'undefined') {
-                  window.location = url;
-                }
-              };
-              gtag('event', 'conversion', {
-                'send_to': 'AW-17918087349/Dg44CNybqIocELWhgeBC',
-                'value': 1.0,
-                'currency': 'INR',
-                'event_callback': callback
-              });
-              return false;
-            }
           `}
         </Script>
 
