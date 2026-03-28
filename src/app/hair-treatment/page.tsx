@@ -12,10 +12,10 @@ import Footer from "@/components/Footer";
 import MobileBar from "@/components/MobileBar";
 import BookConsultationPopup from "@/components/BookConsultationPopup";
 
-export default function Home() {
+export default function HairTreatmentPage() {
   return (
     <main className="overflow-x-hidden pb-10 lg:pb-0">
-      {/* Google Tag Manager (noscript) */}
+      {/* GTM Noscript - Hair Treatment */}
       <noscript>
         <iframe
           src="https://www.googletagmanager.com/ns.html?id=GTM-MGCMVTVH"
@@ -38,7 +38,7 @@ export default function Home() {
       <MobileBar />
       <BookConsultationPopup />
 
-      {/* Google Tag Manager */}
+      {/* Google Tag Manager - Hair Treatment */}
       <Script id="gtm-hair" strategy="afterInteractive">
         {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -47,7 +47,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-MGCMVTVH');`}
       </Script>
 
-      {/* Google Analytics GA4 */}
+      {/* Google Analytics GA4 - Hair Treatment */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-NGFP213CEB"
         strategy="afterInteractive"
@@ -61,7 +61,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         `}
       </Script>
 
-      {/* Meta Pixel */}
+      {/* Meta Pixel - Hair Treatment */}
       <Script id="meta-pixel-hair" strategy="afterInteractive">
         {`
           !function(f,b,e,v,n,t,s)
@@ -86,8 +86,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         />
       </noscript>
 
-      {/* Microsoft Clarity */}
-      <Script id="ms-clarity-hair" strategy="afterInteractive">
+      {/* Microsoft Clarity - Hair Treatment */}
+      <Script id="ms-clarity-hair" strategy="lazyOnload">
         {`
           (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};

@@ -1,6 +1,3 @@
-
-// import NewHairConsultationCardExact from "@/component/contactform";
-
 import Script from "next/script";
 import BeforeAfterSection from "@/components/skincomponent/beforeafter";
 import CTASection from "@/components/skincomponent/cta";
@@ -16,11 +13,10 @@ import TestimonialsSection from "@/components/skincomponent/testominal";
 import SkinTreatments from "@/components/skincomponent/treatments";
 import VideoSection from "@/components/skincomponent/videos";
 
-
-export default function Home() {
+export default function SkinTreatmentPage() {
   return (
     <div>
-      {/* Google Tag Manager (noscript) */}
+      {/* GTM Noscript - Skin Treatment */}
       <noscript>
         <iframe
           src="https://www.googletagmanager.com/ns.html?id=GTM-5WTBTLVH"
@@ -43,8 +39,9 @@ export default function Home() {
       <Footerred />
       <MobileActionBar />
       <ScrollToTop />
-      {/* Google Tag Manager */}
-      <Script id="gtm-head" strategy="beforeInteractive">
+
+      {/* Google Tag Manager - Skin Treatment */}
+      <Script id="gtm-skin" strategy="afterInteractive">
         {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -52,8 +49,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-5WTBTLVH');`}
       </Script>
 
-      {/* Microsoft Clarity */}
-      <Script id="ms-clarity" strategy="afterInteractive">
+      {/* Microsoft Clarity - Skin Treatment */}
+      <Script id="ms-clarity-skin" strategy="lazyOnload">
         {`
           (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -63,7 +60,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         `}
       </Script>
 
-      <Script id="meta-pixel" strategy="afterInteractive">
+      {/* Meta Pixel - Skin Treatment */}
+      <Script id="meta-pixel-skin" strategy="afterInteractive">
         {`
           !function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -78,8 +76,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         `}
       </Script>
       <noscript>
-        <img height="1" width="1" style={{display:"none"}}
+        <img 
+          height="1" 
+          width="1" 
+          style={{ display: "none" }}
           src="https://www.facebook.com/tr?id=1478172490519418&ev=PageView&noscript=1"
+          alt=""
         />
       </noscript>
     </div>

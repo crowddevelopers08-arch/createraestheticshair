@@ -62,9 +62,12 @@ export default function RootLayout({
         <link rel="canonical" href="https://yourdomain.com" />
       </head>
       <body className="antialiased">
+        {/* Global Noscript for GTM - This will be conditionally filled by page components */}
+        <noscript id="gtm-noscript"></noscript>
+        
         {children}
 
-        {/* Google Ads — Global */}
+        {/* Google Ads — Global (Same for all pages) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-17918087349"
           strategy="afterInteractive"
