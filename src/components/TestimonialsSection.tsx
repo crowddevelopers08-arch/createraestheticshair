@@ -85,7 +85,7 @@ export default function TestimonialsSection() {
           </p>
         </FadeIn>
 
-        {/* Mobile carousel */}
+        {/* Mobile  */}
         <div className="sm:hidden overflow-x-auto scrollbar-hide snap-x snap-mandatory">
           <div className="flex gap-4">
             {testimonials.map((t, i) => (
