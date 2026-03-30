@@ -11,11 +11,13 @@ export const metadata: Metadata = {
 export default function ThankYouPage() {
   return (
     <>
-      {/* Event snippet for Submit lead form (1) conversion page */}
+      {/* Event snippet for Submit lead form - Skin LP conversion page */}
       <Script id="google-ads-conversion" strategy="afterInteractive">
         {`
           gtag('event', 'conversion', {
-            'send_to': 'AW-17918087349/iu8ACKDn6oocELWhgeBC'
+            'send_to': 'AW-17918087349/InJCCPuT940cELWhgeBC',
+            'value': 1.0,
+            'currency': 'INR'
           });
         `}
       </Script>

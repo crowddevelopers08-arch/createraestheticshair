@@ -16,7 +16,7 @@ import VideoSection from "@/components/skincomponent/videos";
 export default function SkinTreatmentPage() {
   return (
     <div>
-      {/* GTM Noscript - Skin Treatment */}
+      {/* Google Tag Manager (noscript) */}
       <noscript>
         <iframe
           src="https://www.googletagmanager.com/ns.html?id=GTM-5WTBTLVH"
@@ -40,8 +40,8 @@ export default function SkinTreatmentPage() {
       <MobileActionBar />
       <ScrollToTop />
 
-      {/* Google Tag Manager - Skin Treatment */}
-      <Script id="gtm-skin" strategy="afterInteractive">
+      {/* Google Tag Manager */}
+      <Script id="gtm" strategy="afterInteractive">
         {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -49,8 +49,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-5WTBTLVH');`}
       </Script>
 
-      {/* Microsoft Clarity - Skin Treatment */}
-      <Script id="ms-clarity-skin" strategy="lazyOnload">
+      {/* Google tag (gtag.js) */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17918087349"
+        strategy="afterInteractive"
+      />
+      <Script id="gtag" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-17918087349');
+        `}
+      </Script>
+
+      {/* Microsoft Clarity */}
+      <Script id="clarity" strategy="lazyOnload">
         {`
           (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -59,31 +73,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           })(window, document, "clarity", "script", "vvltrf4a78");
         `}
       </Script>
-
-      {/* Meta Pixel - Skin Treatment */}
-      <Script id="meta-pixel-skin" strategy="afterInteractive">
-        {`
-          !function(f,b,e,v,n,t,s)
-          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-          n.queue=[];t=b.createElement(e);t.async=!0;
-          t.src=v;s=b.getElementsByTagName(e)[0];
-          s.parentNode.insertBefore(t,s)}(window, document,'script',
-          'https://connect.facebook.net/en_US/fbevents.js');
-          fbq('init', '1478172490519418');
-          fbq('track', 'PageView');
-        `}
-      </Script>
-      <noscript>
-        <img 
-          height="1" 
-          width="1" 
-          style={{ display: "none" }}
-          src="https://www.facebook.com/tr?id=1478172490519418&ev=PageView&noscript=1"
-          alt=""
-        />
-      </noscript>
     </div>
   );
 }

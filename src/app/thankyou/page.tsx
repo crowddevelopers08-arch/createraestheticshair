@@ -1,4 +1,3 @@
-
 import Footerred from "@/components/skincomponent/endfooter";
 import ThankYouPage from "@/components/skincomponent/thankpage";
 import Navbars from "@/components/skincomponent/tknavbar";
@@ -11,7 +10,9 @@ const page = () => {
       <Navbars />
       <ThankYouPage />
       <Footerred />
-      <Script id="google-ads-conversion-skin" strategy="afterInteractive">
+
+      {/* Event snippet for Submit lead form - Skin LP conversion page */}
+      <Script id="google-ads-conversion" strategy="afterInteractive">
         {`
           gtag('event', 'conversion', {
             'send_to': 'AW-17918087349/InJCCPuT940cELWhgeBC',
