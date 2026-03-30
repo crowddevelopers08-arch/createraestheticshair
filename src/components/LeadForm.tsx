@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 
 interface LeadFormProps {
   variant?: "hero" | "treatment";
@@ -17,7 +16,6 @@ const HAIR_LOSS_STAGES = [
 ];
 
 export default function LeadForm({ variant = "hero", treatmentName }: LeadFormProps) {
-  const router = useRouter();
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [location, setLocation] = useState("");
@@ -49,7 +47,8 @@ export default function LeadForm({ variant = "hero", treatmentName }: LeadFormPr
     } catch (err) {
       console.error("Lead submission error:", err);
     } finally {
-      router.push("/thank-you");
+      // ── Full page reload and redirect to thank-you ──
+      window.location.href = "/thank-you";
     }
   };
 
