@@ -12,10 +12,21 @@ export default function ThankYouPage() {
   return (
     <>
       {/* Event snippet for Submit lead form - Skin LP conversion page */}
-      <Script id="google-ads-conversion" strategy="afterInteractive">
+      <Script id="google-ads-conversion-1" strategy="afterInteractive">
         {`
           gtag('event', 'conversion', {
             'send_to': 'AW-17918087349/InJCCPuT940cELWhgeBC',
+            'value': 1.0,
+            'currency': 'INR'
+          });
+        `}
+      </Script>
+
+      {/* Event snippet for Lead form - Hair LP conversion page */}
+      <Script id="google-ads-conversion-2" strategy="afterInteractive">
+        {`
+          gtag('event', 'conversion', {
+            'send_to': 'AW-17918087349/u9QeCJmLvp8cELWhgeBC',
             'value': 1.0,
             'currency': 'INR'
           });
